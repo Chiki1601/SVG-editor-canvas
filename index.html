@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Editor Canvas </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+<svg viewBox="0 0 842 596" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4"><path class="Wall" fill="#71cdf4" d="M0 0h842v595.3H0z"/><path class="Shadow" d="M0 387l274-245.4 11 311-160.8 142.7H0V387z" fill-opacity=".2"/><g class="Canvas"><path fill="#2878b9" d="M274 141.6H568v311H274z"/><path fill="#1d5b8a" d="M274 141.6h11v311h-11z"/></g>
+<transition name="bounce">
+<g v-if="editor" class="Editor"><g class="Console"><path fill="#1e1e1e" d="M318.3 225.5h17.3v143.2h-17.3z"/><path fill="#414141" d="M335.6 225.5h188v143.2h-188z"/></g><path class="Top-Bar" fill="#e6e6e6" d="M318.3 225.5h205.3v12H318.3z"/><ellipse @click="closeEditor" class="Close" cx="327" cy="231.6" rx="3.3" ry="3" fill="#ef4e4e"/><ellipse cx="335.6" cy="231.6" rx="3.3" ry="3" fill="#facc39"/><ellipse cx="344.3" cy="231.6" rx="3.3" ry="3" fill="#7cc241"/><path class="Green-Line-1" fill="#17b66d" d="M343 249.6h93v6.3h-93z"/><path class="Green-Line-2" fill="#17b66d" d="M343 304.8h71.3v6.3H343z"/><path class="Green-Line-3" fill="#17b66d" d="M423.6 304.8h51.2v6.3h-51.2z"/><path class="Red-Line-3" fill="#d76a41" d="M343 320.2h101v6H343z"/><path class="Yellow-Line-1" fill="#edbe2a" d="M343 277h93v6.4h-93z"/><path class="Yellow-Line-2" fill="#edbe2a" d="M343 332.7h93v6.3h-93z"/><path class="Yellow-Line-3" fill="#edbe2a" d="M447 332.7h65v6.3h-65z"/><path class="Blue-Line-1" fill="#25a9fc" d="M343 291.6h147.7v6.3H343z"/><path class="Blue-Line-2" fill="#25a9fc" d="M343 345.8h147.7v6.3H343z"/><path class="Red-Line-1" fill="#d76a41" d="M343 262h46.5v6.7H343z"/><path class="Red-Line-2" fill="#d76a41" d="M399.7 262h46.5v6.7h-46.5z"/><path class="Red-Line-4" fill="#d76a41" d="M451.4 319.7H498v6.6h-46.6z"/></g>
+</transition>
+<g class="Stand"><g class="Top"><path fill="#eed2a0" d="M372.6 121.6h96.7v20h-96.7zM382 105.5h78v16h-78z"/><path fill="#ebca92" d="M372.6 121.6h10.8v20h-10.8zM382 105.5h8.7v16H382z"/><path fill="#eed2a0" d="M412.5 63h17v42.5h-17z"/><path fill="#ebca92" d="M412.5 63h4.5v42.5h-4.5z"/></g><g class="Base"><path fill="#eed2a0" d="M285 489.2h46.2v106h-46zM519.5 489.2h46v106h-46z"/><path fill="#ebca92" d="M285 489.2h23.2v106h-23zM519.5 489.2h23v106h-23z"/><path fill="#eed2a0" d="M240.3 425h378.2v64.2H240.3z"/><path fill="#ebca92" d="M240.3 425H366v64.2H240.4z"/></g></g></svg>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
